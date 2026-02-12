@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9f8;
+  }
+  #welcomeMessage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInOut 4s ease-in-out forwards;
+    z-index: 9999;
+  }
+
+  #welcomeMessage h1 {
+    font-size: 3rem;
+    margin: 0;
+
+  }
+
+  #welcomeMessage p {
+    font-size: 3rem;
+    margin-top: 10px;
+  }
+
+
+  .hidden {
+    display: none;
+  }
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: scale(0.9);}
+    25% { opacity: 1; transform: scale(1);}
+    75% { opacity: 1;}
+    100% { opacity: 0; transform: scale(1.1);}
+  }
+
+  
+  header { 
+      background-image: url("./ivan-torres-MQUqbmszGGM-unsplash.jpg");
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .login-btn {
+    position: absolute;
+    top: 0%;
+    right: 10px;
+    background-color:#ff6347;
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    align-items: center;
+  } 
+  .login-btn i {
+    margin-right: 8px;
+  }
+  .login-btn:hover {
+    background-color: #e05640;
+  }
+  
+  .hero {
+    background: url('4aebf25c924cf646a34feaae26b32519.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+  }
+  
+  .hero p {
+    font-size: 1.5em;
+  }
+  
+  .hero .btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background: #994a3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+ 
+ .featured-dishes {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #a56a1daf;
+  }
+  
+  .featured-dishes h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  
+  .dishes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  
+  .dish {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  
+  .dish img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .dish h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .dish p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  footer {
+    background-image: url("ivan-torres-MQUqbmszGGM-unsplash.jpg");
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }

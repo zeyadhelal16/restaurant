@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creat an account</title>
+    <link rel="stylesheet" href="signupc.css">
+    <script defer src="helal2.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>CREATE AN ACCOUNT</h2>
+        <form id="form" class="form">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name" >
+            <span style="color: red;" id="fullname_error"></span>
+
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Mail" >
+            <span style="color: red;" id="email_error"></span>
+
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number"  pattern="[0-9]{10}" title="يجب أن يحتوي الرقم على 10 أرقام">
+            <span style="color: red;" id="phone_error"></span>
+
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" >
+            <span style="color: red;" id="password_error"></span>
+
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-Enter Password" >
+            <span style="color: red;" id="confirmpassword_error"></span>
+
+
+            <input type="submit" value="Create an account">
+        </form>
+
+        <div class="form-footer">
+            <p>Yoy already have an account?<a href="login.html">Login</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
